@@ -13,7 +13,7 @@ day = 1
 for t in temperatures:
     if t > average:
         print("Day", day, "is above average.")
-    elif t < average:
+    if t < average:
         print("Day", day, "is below average.")
     else:
         print("Day", day, "is average.")
@@ -101,7 +101,7 @@ if num1 <= num2 and num1 <= num3:
     else:
         middle = num3
         biggest = num2
-elif num2 <= num1 and num2 <= num3:
+if num2 <= num1 and num2 <= num3:
     smallest = num2
     if num1 <= num3:
         middle = num1
